@@ -1,0 +1,37 @@
+h1{
+    color: blue;
+    background-color: gray;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+.div{
+    width: 48%;
+    background: yellow;
+    margin: 0px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.eu{
+    width: 48%;
+    display: inline-block;
+    background: cyan;
+    margin: 0px;
+    padding: 10px;
+}
+
+.eu li{
+    text-decoration: none;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    border: 0.5px solid color(srgb rgb(78, 10, 10));
+    padding: 20px;
+    display: block;
+}
