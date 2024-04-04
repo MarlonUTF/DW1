@@ -5,33 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS interno</title>
     <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
         h1{
+            font-family: "Honk", system-ui;
+            font-style: normal;
+            font-size: 70px;
             color: lightslategrey;
             text-align: center;
         }
+    
         p{
             color: lightgreen;
             text-align: justify;
             font-family: 'Courier New', Courier, monospace;
+            padding: 10px;
         }
         body {
-            background-image: linear-gradient(to right, rgb(0, 0, 0) 10%, rgb(41, 41, 41) 90%);
+            width: 100%;
+            background-image: linear-gradient(to right, rgb(8, 13, 34) 10%, rgb(0, 0, 0) 90%);
+            overflow-x: hidden;
         }
+        /* body{
+            background-color: rgb(8, 13, 34);
+        } */
         span{
             font-size: larger;
+        }
+
+        #loremdif{
+            color: rgb(78, 255, 116);
+            background: rgba(153, 205, 50, 0.137);
+        }
+
+        #underline{
+            text-decoration: underline;
+        }
+
+        #border{
+            background: #6C7A89;
+            word-wrap: normal;
+        }
+
+        .container{ 
+            padding: 10px;
+            width: 100vw;
+            height: 60vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            margin: auto;
+            display: block;
+            margin: auto;
+            display: block;
+        }
+
+        .espacinho{
+            border: 5px dashed rgb(30, 108, 134);
+            width: 900px;
+            padding: 10px;padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        image{
+            display: flex;
+            justify-content: center
         }
 
     </style>
 
 </head>
 <body>
-
+</div>
     <h1>Título</h1>
 
-    <p> <strong><span>Lorem </span></strong>ipsum dolor sit amet consectetur adipisicing elit. Illo quas debitis consectetur, temporibus eligendi earum corrupti reprehenderit perspiciatis ullam rem, eum velit? Molestias esse sequi nulla fugiat aut? Atque, eligendi!</p>
+    <p id="loremdif"> <strong><span>Lorem </span></strong>ipsum dolor sit amet consectetur adipisicing elit. Illo quas debitis consectetur, temporibus eligendi earum corrupti reprehenderit perspiciatis ullam rem, eum velit? Molestias esse sequi nulla fugiat aut? Atque, eligendi!</p>
+    <p id="underline"><strong><span>Lorem </span></strong> ipsum dolor sit amet consectetur adipisicing elit. Illo quas debitis consectetur, temporibus eligendi earum corrupti reprehenderit perspiciatis ullam rem, eum velit? Molestias esse sequi nulla fugiat aut? Atque, eligendi!</p>
     <p><strong><span>Lorem </span></strong> ipsum dolor sit amet consectetur adipisicing elit. Illo quas debitis consectetur, temporibus eligendi earum corrupti reprehenderit perspiciatis ullam rem, eum velit? Molestias esse sequi nulla fugiat aut? Atque, eligendi!</p>
-    <p><strong><span>Lorem </span></strong> ipsum dolor sit amet consectetur adipisicing elit. Illo quas debitis consectetur, temporibus eligendi earum corrupti reprehenderit perspiciatis ullam rem, eum velit? Molestias esse sequi nulla fugiat aut? Atque, eligendi!</p>
+<div>
 
-
+<div class="container">
+    <div class="espacinho">
+    <div id="border">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur laudantium, hic quos aut provident nobis. Corporis fugiat nemo, in ullam deleniti, unde neque dolore sequi praesentium necessitatibus, inventore nobis dolor!</p>
+        <img src="imgs/Sem título.jpeg" alt="">
+    </div>
+    </div>
+</div>
 </body>
 </html>
