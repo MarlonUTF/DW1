@@ -1,0 +1,15 @@
+.code {
+    background-color: #eee;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+    color: red;
+}
+
+.exemplo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 3px rgb(40, 40, 102) dashed;
+}
