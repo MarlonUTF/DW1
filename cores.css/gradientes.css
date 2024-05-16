@@ -1,0 +1,31 @@
+body{
+    background: linear-gradient(to right,#9CDE9F,rgb(9, 151, 120));
+}
+
+*{
+    color: rgb(0, 19, 83);
+}
+
+ul{
+    list-style-type: none;
+}
+
+ol li{
+    list-style-type: none;
+    color: white;
+    font-weight: bold;
+    background: rgb(0, 97, 65);
+    border: 1px solid black;
+    padding: 10px;
+    width: 16%;
+    display: inline-block;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+ol li:hover{
+    background-color: blanchedalmond;
+    color: blue;
+    border: none;
+}
