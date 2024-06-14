@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 :root{
     --cor-fundo: #A1BA89;
     --cor-principal: #A5CC6B;
@@ -163,7 +164,10 @@
 }
 
 #simples{
-    background-color: var(--simples);
+    /* background-color: var(--simples); */
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALIAAACUCAMAAAAAoYNxAAAAA1BMVEV/o9NiJ37zAAAAMUlEQVR4nO3BAQ0AAADCoPdPbQ43oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgywBnfAABIm7MIAAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #simples h1{
@@ -171,7 +175,9 @@
 }
 
 #simples p{
-    color: white;
+    color: rgb(255, 255, 255);
+    font-family: "Gochi Hand", cursive;
+    font-size: 1.5em;
 }
 
 #supuesto{
@@ -196,4 +202,23 @@
 
 #noisettes p{
     color: rgb(255, 172, 223);
+}
+
+footer{
+    background-color: #846267;
+    text-align: center;
+    padding: 15px;
+}
+
+footer  h1{
+    font-family: "Gochi Hand", cursive;
+    padding-bottom: 30px;
+    font-size: 2em;
+}
+
+.informacoes{
+    display: flex;
+    font-family: "Gochi Hand", cursive;
+    justify-content: space-around;
+    font-size: 1.2em;
 }
