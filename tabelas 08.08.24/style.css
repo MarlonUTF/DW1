@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --container-color: #a682ff;
+    --visor-color: #102e4a;
+    --funco-color: #ffffff;
+    --operadores-color: #376ffd;
+    --operadores-color-hover: #0048ff;
+    --numbers-color: #53ace0;
+    --numbers-color-hover: rgb(0, 153, 255);
+    --igual-color: #715AFF;
+    --igual-color-hover: purple;
+    --numero-visor-color: white;
+    --fonte-numeros: "Roboto Mono", monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-numeros);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--container-color);
+}
+
+td{
+    width: 7rem;
+    height: 7rem;
+}
+
+table{
+    text-align: center;
+    background-color: var(--funco-color);
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.operadores{
+    background-color: var(--operadores-color);
+}
+
+.operadores:hover{
+    background-color: var(--operadores-color-hover);
+}
+
+.visor{
+    background-color: var(--visor-color);
+}
+
+.numero-visor{
+    color: var(--numero-visor-color);
+    text-align: right;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding-right: 2rem;
+}
+
+.result{
+    background-color: var(--igual-color);
+    border-end-end-radius: 20px;
+    transition: 0.2s;
+}
+
+.result:hover{
+    background-color: var(--igual-color-hover);
+}
+
+.zero{
+    border-end-start-radius: 20px;
+}
+
+.numero{
+    background-color: var(--numbers-color);
+    transition: 0.2s;
+}
+
+.numero:hover{
+    background-color: var(--numbers-color-hover);
+}

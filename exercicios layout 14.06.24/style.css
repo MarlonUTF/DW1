@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+:root{
+    --cor_fundo_inicio:rgb(69, 154, 180);
+    --cor_topo: #ffec99;
+    --cor_sidebar: #a5d8ff;
+    --cor_conteudo: #b2f2bb;
+    --cor_rodape: #ffc9c9;
+    --fonte_ex12: "Nanum Pen Script", cursive;
+    --fundo_azul: #2644b4;
+    --branco: white;
+    --descricao: gray;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inicio{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    background-color: var(--cor_fundo_inicio);
+}
+
+.inicio h1{
+    color: var(--branco);
+}
+
+.links_inicio{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links_inicio a, .ex_1 a, .ex_2 a{
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--branco);
+    background-color: blue;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.links_inicio a:hover, .ex_1 a:hover, .ex_2 a:hover{
+    background-color: var(--branco);
+    color: var(--fundo_azul);
+    padding: 15px;
+    font-weight: bold;
+}
+
+.ex_1{
+    display: flex;
+    flex-wrap: wrap;
+    font-family:  var(--fonte_ex12);
+}
+
+.ex_1 h2{
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.ex_1 .topo{
+    background-color: var(--cor_topo);
+    width: 100vw;
+    height: 10vh;
+    align-self: start;
+    border: 1px solid black;
+}
+
+.ex_1 .sidebar{
+    background-color: var(--cor_sidebar);
+    flex: 2;
+    height: 80vh;
+    border: 1px solid black;
+}
+
+.ex_1 .conteudo{
+    background-color: var(--cor_conteudo);
+    flex: 5;
+    height: 80vh;
+    border: 1px solid black;
+}
+
+.ex_1 .rodape{
+    background-color: var(--cor_rodape);
+    width: 100vw;
+    height: 10vh;
+    align-self: flex-end;
+    border: 1px solid black;
+}
+
+.ex_1 p, .ex_2 p{
+    text-align: center;
+    font-size: large;
+}
+
+
+
+.ex_2 {
+    display: flex;
+    height: 100vh;
+    font-family: var(--fonte_ex12);
+}
+
+.ex_2 .sidebar {
+    background-color: var(--cor_sidebar);
+    flex: 0 0 30vw;
+    height: 100vh;
+    border: 1px solid black;
+}
+
+.ex_2 .lado_esquerdo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.ex_2 .topo {
+    background-color: var(--cor_topo);
+    flex: 0 0 10vh;
+    border: 1px solid black;
+}
+
+.ex_2 .conteudo {
+    background-color: var(--cor_conteudo);
+    flex: 1;
+    border: 1px solid black;
+}
+
+.ex_2 .rodape {
+    background-color: var(--cor_rodape);
+    flex: 0 0 10vh;
+    border: 1px solid black;
+}
+
+.ex_2 h2 {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--fundo_azul);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.card-container{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+
+    gap: 1rem;
+}
+.container h1 {
+    text-align: center;
+    width: 100vw;
+    top: 28vh;
+    color: var(--branco);
+    font-size: 70px;
+}
+
+.card{
+    background-color: var(--branco);
+    border-radius: 20px;
+    padding: 20px 50px;
+    margin-top: 0;
+    height: 30rem;
+    width: 25rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card li{
+    list-style-type: none;
+    text-align: center;
+}
+
+.plano-nome{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.plano-valor{
+    color: var(--fundo_azul);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.plano-descricao{
+    color: var(--descricao);
+}
+
+.plano-comprar{
+    background-color: var(--fundo_azul);
+    border-radius: 10px;
+    padding: 20px;
+    width: 10rem;
+    color: var(--branco);
+    text-align: center;
+    transition: 0.5s;
+}
+
+.plano-comprar:hover{
+    background-color: var(--branco);
+    color: var(--fundo_azul);
+    border: 1px solid var(--fundo_azul);
+    font-size: large;
+}
+
+.voltar{
+    display: flex;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(112, 179, 112);
+    border-radius: 20px;
+}
+
+.voltar a{
+    text-decoration: none;
+    color: var(--branco);
+    padding: 20px;
+}
+
+.voltar:hover{
+    background-color: white;
+    border: 1px solid rgb(112, 179, 112);
+}
+
+.voltar:hover a{
+    color: rgb(112, 179, 112);
+}
