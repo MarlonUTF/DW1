@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 18px;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+
+    background-color: white;
+}
+
+h1{ 
+    margin: 20px;
+
+    width: 100%;
+    height: 20vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-size: 35px;
+}
+
+.divInput{
+    width: 40vw;
+    height: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgb(204, 197, 197);
+    border: 1px solid black;
+}
+
+input{
+    height: 30px;
+    text-align: center;
+}
+
+.inputs{
+    height: 20vh;
+    justify-content: space-between;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+
+#calcular{
+    width: 10rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+    color: white;
+
+    
+    border: 1px solid black;
+
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#calcular:hover{
+    background-color: white;
+    color: black;
+}
+
+.valores{
+    width: 40vw;
+    height: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgb(204, 197, 197);
+    border: 1px solid black;
+}
+
+.condicoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25vh;
+}
+
+#saida{
+    width: 100vw;
+    height: 20vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.verde{
+    background-color: lightgreen;
+    font-size: 25px;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.vermelho{
+    background-color: red;
+    font-size: 25px;
+    padding: 0 10px;
+    border-radius: 5px;
+}

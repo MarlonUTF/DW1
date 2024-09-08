@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="calculadora">
+            <h1>Cálculo de IMC</h1>
+            <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.
+
+                O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
+                
+                Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.
+            </p>
+
+            <label for="peso">Peso</label>
+            <input id="peso" type="text">
+
+            <label for="altura">Altura</label>
+            <input id="altura" type="text">
+
+            <button id="calcular">Calcular</button>
+
+            <div id="saida"></div>
+        </div>
+
+        <div class="dados">
+            <!--  -->
+            <img src="https://bariatricaflorianopolis.com.br/wp-content/uploads/2017/06/Tabela-de-IMC-dos-Graus-de-obesidade.png" alt="">
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

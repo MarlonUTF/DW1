@@ -1,0 +1,119 @@
+:root{
+    --cor-fundo: rgb(35, 143, 84);
+    --cor-titulo1: #271033;
+    --cor-texto: #00191f;
+    --cor-fundo-input: white;
+    --cor-botão: #eeea1e;
+    --cor-botao-hover: black;
+    --cor-fundo-saida: white;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--cor-fundo);
+}
+
+.container h1{
+    color: var(--cor-titulo1);
+}
+
+.container p, label{
+    color: var(--cor-texto);
+}
+
+.container #saida{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--cor-fundo-saida);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.container #saida h2, .container #saida p{
+    padding: 10px;
+}
+
+.container .input{
+    margin: 15px;
+}
+
+textarea:focus, input:focus, select:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: none;
+}
+
+
+
+.container input{
+    border-radius: 10px;
+    width: 150px;
+    height: 25px;
+
+    text-align: center;
+}
+
+.container #calcularex1, .container #calcularex2, .container #calcularex3{
+    width: 150px;
+    height: 30px;
+    
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--cor-botão);
+
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.container #calcularex1:hover, .container #calcularex2:hover, .container #calcularex3:hover{
+    background-color: var(--cor-botao-hover);
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+}
+
+.container span{
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    background-color: rgb(134, 228, 12);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.container a:hover{
+    background-color: white;
+    border: 2px solid green;
+    color: green;
+}
+
+.voltar{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}

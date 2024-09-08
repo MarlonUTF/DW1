@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Multas</title>
+    <script src="multa.js" defer></script>
+    <link rel="stylesheet" href="multa.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Multas</h1>
+
+        <div class="divInput">
+            <div class="inputs">
+                <div class="input">
+                    <label for="maxVia">Velocidade Máxima da Via</label>
+                    <input id="maxVia" type="number" placeholder="Km/h">
+                </div>
+                <div class="input">
+                    <label for="velocidade">Velocidade do veículo</label>
+                    <input id="velocidade" type="number" placeholder="Km/h">
+                </div>
+            </div>
+            <div id="calcular">Calcular</div>
+        </div>
+
+        <div class="valores">
+            <p>Multa por excesso de volocidade:</p>
+            <div class="condicoes">
+                <p><b>R$0,00</b> - Por não execeder o limite permitido</p>
+                <p><b>R$130,16</b> - Até 20% acima do limite permitido</p>
+                <p><b>R$195,23</b> - De 20% até 50% acima do limite permitido</p>
+                <p><b>R$880,41</b> - Acima de 50% limite permitido</p>
+            </div>
+        </div>
+
+        <div class="divSaida" id="saida">
+        </div>
+
+    </div>
+    
+</body>
+</html>
