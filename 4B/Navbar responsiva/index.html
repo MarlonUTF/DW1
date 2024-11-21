@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex Navbar responsiva</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="primeiro"><a href="#">LOGO</a></li>
+        <li><a href="#" class="hideMobile">Home</a></li>
+        <li><a href="#" class="hideMobile">Sobre</a></li>
+        <li><a href="#" class="hideMobile">Contato</a></li>
+
+        <li id="menuIcon" class="hideDesktop">
+          <a href="#">
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <ul id="sidebar">
+        <div class="navMobile">
+          <li><a href="#">LOGO</a></li>
+          <li id="closeIcon">
+            <a href="#">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </div>
+        <div class="options"> 
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <h1>Navbar responsiva</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid natus, velit sapiente sunt facilis in dolore fugit delectus rerum quo temporibus nostrum ratione asperiores a esse tenetur cum enim aspernatur.</p>
+    </div>
+  </body>
+</html>
